@@ -1,0 +1,15 @@
+.banner {
+  margin-top: 0;
+  border-bottom: 2rem solid #a1dcf7;
+  width: 100%;
+  display: flex;
+  background: white;
+  margin-block-end: 0;
+  padding: 2rem;
+  position: sticky;
+}
+
+.border {
+  border-bottom: 0.1rem solid #d4bff5;
+  filter: drop-shadow(10px 10px 10px #d4bff5);
+}

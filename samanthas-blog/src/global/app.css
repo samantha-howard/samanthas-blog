@@ -9,11 +9,10 @@
 */
 
 body {
-  display: block;
+  background: #fab9e2;
   display:flex;
   justify-content:center;
   align-items:center;
-  background: #ed87be;
   align-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }

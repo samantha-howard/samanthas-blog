@@ -1,6 +1,7 @@
 import { Component, Host, Prop, getAssetPath, h, State } from '@stencil/core';
 import { BlogEntryItem } from '../../utils/interfaces';
 import { state } from '../../utils/store';
+import { HTMLClasses } from './resources';
 
 @Component({
   tag: 'blog-entry',
@@ -39,7 +40,7 @@ export class BlogEntry {
   render() {
     return (
       <Host>
-        <div innerHTML={this.markdown}></div>
+        <div class={HTMLClasses.entry} innerHTML={this.markdown}></div>
       </Host>
     );
   }
