@@ -1,13 +1,13 @@
 import { Component, Host, h } from '@stencil/core';
+import { HTMLClasses } from './resources';
 
 @Component({
   tag: 'blog-header',
-  styleUrl: 'blog-header.scss',
-  shadow: true,
+  styleUrl: 'blog-header.scss'
 })
 export class BlogHeader {
 
-  private textToDisplay = "Blog Header";
+  private textToDisplay = "Samantha's Blog of Amazing Hobbies🏳️‍⚧️";
 
   /**
    * Renders the home page and subsequent components
@@ -17,7 +17,11 @@ export class BlogHeader {
   render() {
     return (
       <Host>
-        {this.textToDisplay}
+        <div class={HTMLClasses.border}>
+          <h1 class={HTMLClasses.banner}>
+            {this.textToDisplay}
+          </h1>
+        </div>
       </Host>
     );
   }

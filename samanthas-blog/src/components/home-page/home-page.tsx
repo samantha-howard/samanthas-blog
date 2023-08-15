@@ -26,8 +26,6 @@ export class HomePage {
       <Host>
         <blog-header></blog-header>
         <br/>
-        <blog-entry-input></blog-entry-input>
-        <br/>
         <blog-list></blog-list>
         <br/>
       </Host>

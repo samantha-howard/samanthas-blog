@@ -13,8 +13,6 @@ export namespace Components {
          */
         "name": string;
     }
-    interface BlogEntryInput {
-    }
     interface BlogHeader {
     }
     interface BlogList {
@@ -28,12 +26,6 @@ declare global {
     var HTMLBlogEntryElement: {
         prototype: HTMLBlogEntryElement;
         new (): HTMLBlogEntryElement;
-    };
-    interface HTMLBlogEntryInputElement extends Components.BlogEntryInput, HTMLStencilElement {
-    }
-    var HTMLBlogEntryInputElement: {
-        prototype: HTMLBlogEntryInputElement;
-        new (): HTMLBlogEntryInputElement;
     };
     interface HTMLBlogHeaderElement extends Components.BlogHeader, HTMLStencilElement {
     }
@@ -55,7 +47,6 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "blog-entry": HTMLBlogEntryElement;
-        "blog-entry-input": HTMLBlogEntryInputElement;
         "blog-header": HTMLBlogHeaderElement;
         "blog-list": HTMLBlogListElement;
         "home-page": HTMLHomePageElement;
@@ -69,8 +60,6 @@ declare namespace LocalJSX {
          */
         "name"?: string;
     }
-    interface BlogEntryInput {
-    }
     interface BlogHeader {
     }
     interface BlogList {
@@ -79,7 +68,6 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "blog-entry": BlogEntry;
-        "blog-entry-input": BlogEntryInput;
         "blog-header": BlogHeader;
         "blog-list": BlogList;
         "home-page": HomePage;
@@ -90,7 +78,6 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "blog-entry": LocalJSX.BlogEntry & JSXBase.HTMLAttributes<HTMLBlogEntryElement>;
-            "blog-entry-input": LocalJSX.BlogEntryInput & JSXBase.HTMLAttributes<HTMLBlogEntryInputElement>;
             "blog-header": LocalJSX.BlogHeader & JSXBase.HTMLAttributes<HTMLBlogHeaderElement>;
             "blog-list": LocalJSX.BlogList & JSXBase.HTMLAttributes<HTMLBlogListElement>;
             "home-page": LocalJSX.HomePage & JSXBase.HTMLAttributes<HTMLHomePageElement>;

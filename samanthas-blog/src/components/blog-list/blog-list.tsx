@@ -1,7 +1,6 @@
 import { Component, Host, h } from '@stencil/core';
 import { state } from '../../utils/store';
 import { BlogEntryItem } from '../../utils/interfaces';
-import { HTMLClasses } from '../blog-entry/resources';
 
 @Component({
   tag: 'blog-list',
@@ -21,7 +20,6 @@ export class BlogList {
         {state.blogEntries.map((entry: BlogEntryItem) => {
           return (
             <blog-entry
-              class={HTMLClasses.entry}
               name={entry.name}
             ></blog-entry>
           );
